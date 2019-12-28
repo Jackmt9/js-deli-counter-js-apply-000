@@ -2,6 +2,12 @@ function takeANumber(line, name){
   line.push(name);
   return "Welcome, " + name + ". You are number " + line.length + " in line.";
 }
+var ticketNumber = 1;
+function takeANumber2(line){
+  ticketNumber++;
+  line.push(ticketNumber)
+  return "Welcome you have ticket number " + ticketNumber; + "."
+}
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0){
   var next = katzDeliLine[0];
